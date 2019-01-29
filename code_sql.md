@@ -33,14 +33,6 @@ CREATE TABLE 'comments' ('id' INTEGER PRIMARY KEY AUTOINCREMENT,'picture_id' INT
 'user_id' INTEGER,'comment' TEXT, FOREIGN KEY(picture_id) REFERENCES pictures(id), FOREIGN KEY(user_id) REFERENCES users(id));
 
 
-********************** THE HACKING MOOC *******************************
-
-CREATE TABLE `courses` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT, `titre` TEXT,`description` TEXT);
-
-CREATE TABLE `lessonss` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT,`titre` TEXT,`description` TEXT, FOREIGN KEY (id_courses) REFERENCES courses(id));
-
-
-
 ********************** THE HACKING NEWS *******************************
 
 CREATE TABLE `user` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT);
